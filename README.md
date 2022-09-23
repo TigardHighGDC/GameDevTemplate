@@ -6,4 +6,4 @@ Repository template for Unity game development
 
 Copyright (c) TigardHighGDC
 
-SPDX-License SPDX-License-Identifier: Apache-2.0
+SPDX-License-Identifier: Apache-2.0

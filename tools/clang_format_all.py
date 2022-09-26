@@ -10,9 +10,9 @@ import os
 import sys
 import time
 
-FILES_DIR = "Assets/Scripts"
+FILES_DIR = "Assets/Code"
 FILE_TARGETS = [".cs"]
-FORMAT_COMMAND = "-i -style=file"
+FORMAT_COMMAND = "clang-format -i -style=file"
 
 class Colors:
     GREEN = "\033[92m"
@@ -53,6 +53,8 @@ def main() -> None:
         print("Please double check that clang-format can be found in PATH.")
         sys.exit(0)
 
+    del clang_format # Not needed after validation
+
     # Verify the path is the root of the project
     if not os.path.exists(os.path.join(os.getcwd(), ".clang-format")): # Use .clang-format as a marker
         # Recursively search for the root of the project
@@ -77,7 +79,7 @@ def main() -> None:
     # Format the files
     for file in files:
         print(f"{Colors.YELLOW}Formatting {file}...{Colors.END}")
-        os.system(f"{clang_format} {FORMAT_COMMAND} {file}")
+        os.system(f"{FORMAT_COMMAND} {file}")
 
     timer.tick()
     print(f"{Colors.GREEN}Formatted {len(files)} files in {timer.get_elapsed()} seconds.{Colors.END}")

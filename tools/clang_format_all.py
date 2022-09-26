@@ -9,6 +9,7 @@ Requires clang-format to be installed and in PATH.
 import os
 import sys
 import time
+from sys import platform
 
 FILES_DIR = "Assets/Code"
 FILE_TARGETS = [".cs"]
@@ -37,7 +38,7 @@ class Timer:
 
 def main() -> None:
     # If os is not windows, exit
-    if os.name != "nt":
+    if platform != "win32":
         print("This clang-format script is only for Windows 10 or Later.")
         sys.exit(0)
 
@@ -62,6 +63,7 @@ def main() -> None:
         while True: 
             os.chdir("../")
             if os.path.exists(os.path.join(os.getcwd(), ".clang-format")):
+                print(f"{Colors.GREEN}Found root of project at {os.getcwd()}{Colors.END}")
                 break
 
     # Get the list of files to format

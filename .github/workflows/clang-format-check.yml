@@ -13,4 +13,4 @@ jobs:
       uses: jidicula/clang-format-action@v4.5.0
       with:
         clang-format-version: '13'
-        check-path: 'Assets/Code'
+        check-path: 'Assets/Scripts'

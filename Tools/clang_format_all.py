@@ -2,7 +2,7 @@
 # SPDX-License SPDX-License-Identifier: Apache-2.0
 
 """
-Run this script to auto format all c# files in the Assets/Code folder.
+Run this script to auto format all c# files in the Assets/Scripts folder.
 Requires clang-format to be installed and in PATH.
 """
 
@@ -11,7 +11,7 @@ import sys
 import time
 from sys import platform
 
-FILES_DIR = "Assets/Code"
+FILES_DIR = "Assets/Scripts"
 FILE_TARGETS = [".cs"]
 FORMAT_COMMAND = "clang-format -i -style=file"
 

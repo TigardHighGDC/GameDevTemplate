@@ -11,24 +11,23 @@ programming and gaming that has driven us to be where we are today! Here are som
 
 ### Steps for Contributing
 
-1. Raise an issue
+- Fork the repository and make a new branch for your changes.
+  - We do this to avoid committing directly to main. It also has the side benefit of attaching each new branch to an individual.
+- Make your changes and commit them to your branch.
+  - It is recommended to make small changes at a time. Keeping a div small makes review quicker and prevents excessive time loss if something starts off wrong.
+- Open a pull request to merge your branch into main.
+  - If there is an issue to be closed, please include the phrase `closes #<issue number>` in the description of the pull request.
+- Wait for a review from one of our team leaders.
+  - This process can take some time so please don't be surprised or discouraged if multiple iterations of changes are requested. Usually two approvals are required before we will merge your changes.
+- Once your changes are approved we will update the change log and merge your commits!
+  - Updating the change log can take some time so it's not uncommon for a pull request to sit `ready to merge` for a while.
 
-We ask that every item that is worked on has an issue from the beginning to the end of it's lifetime.
+Any contributing questions can be directed to our team leaders, we are more than happy to help!
 
-2. Update the Project Board
+### Reviewing a Pull Request
 
-We have a [Project Board]() that track all issues currently being worked on, if you are working on something please make sure that it is reflected in
-the project board.
-
-3. Open a Pull Request
-
-Once you have a solution to the feature or bug you are working on open a pull request. Please keep in mind that we maintain high standards for our code
-and it may take a few revisions until everyone is happy with the suggested code. When opening your pr please make sure that you link the issue it is
-supposed to fix.
-
-4. Close you Issue
-
-Mark your issue with the `fixed` tag and close the issue. If you linked the issue properly it should close itself.
+We usually require two approvals before considering a pull request ready to merge. These reviews mainly coming from our team leaders.
+We encourage everyone to get involved in the review process of all PRs. Even if you are not a requested reviewer you can still leave a review, wether you think all changes look good or you see something that can be changed!
 
 ### Other Tips
 
